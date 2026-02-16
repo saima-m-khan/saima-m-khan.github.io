@@ -1,32 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Saima Khan</title>
   <meta charset="UTF-8">
+  <title>Saima M. Khan</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px; line-height: 1.6; }
-    h1 { color: #222; }
-    a { color: #0066cc; text-decoration: none; }
+    /* Reset some default styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #004080;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    h1 { font-size: 2.5em; margin-bottom: 0.3em; }
+    h2 { color: #004080; margin: 40px 0 20px; }
+
+    p { margin: 15px 0; }
+
+    a.link { 
+      color: #0066cc; 
+      text-decoration: none; 
+      font-weight: bold;
+    }
+
+    a.link:hover { text-decoration: underline; }
+
+    /* Sections spacing */
+    section { padding: 40px 0; text-align: left; }
+    section ul { list-style-type: disc; margin-left: 20px; }
   </style>
 </head>
 <body>
 
-<h1>Saima Khan</h1>
-<p>PhD Candidate in Economics | Behavioural Economics | Gender Inequalities</p>
+<!-- Navigation -->
+<nav>
+  <a href="#research">Research</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#creative">Creative Works</a>
+</nav>
 
-<img src="profile.jpg" alt="Saima Khan" width="200">
+<div class="container">
+  <!-- Profile -->
+  <img src="profile.jpg" alt="Saima M. Khan">
+  <h1>Saima M. Khan</h1>
+  <p>PhD Candidate in Economics | Behavioral Economics | Gender & STEM</p>
+  <p><a class="link" href="CV.pdf" target="_blank">View CV</a></p>
+  <p>
+    <a class="link" href="mailto:your@email.com">Email</a> | 
+    <a class="link" href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  </p>
 
-<h2>About</h2>
-<p>Researching gender gaps in STEM and designing behavioural interventions to improve STEM engagement.</p>
+  <!-- Research Section -->
+  <section id="research">
+    <h2>Research</h2>
+    <ul>
+      <li>Gender Gap in STEM – Review Article (Working Paper)</li>
+      <li>Behavioral Interventions for First-Year Female Students</li>
+      <!-- Add more research items -->
+    </ul>
+  </section>
 
-<h2>Research</h2>
-<ul>
-  <li>Gender Gap in STEM – Review Article (Working Paper)</li>
-  <li>Behavioural Interventions for First-Year Female Students</li>
-</ul>
+  <!-- Teaching Section -->
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li>BEA102 – Behavioral Economics (Current Semester)</li>
+      <li>Undergraduate Economics Tutorials</li>
+      <!-- Add more teaching info -->
+    </ul>
+  </section>
 
-<h2>Contact</h2>
-<p>Email: saima.khan@utas.edu.au</p>
+  <!-- Creative Works Section -->
+  <section id="creative">
+    <h2>Creative Works</h2>
+    <ul>
+      <li>Short stories and poems integrating research insights</li>
+      <li>Artworks and exhibitions (WanderArt, Twilight Market)</li>
+      <!-- Add more links or examples -->
+    </ul>
+  </section>
+</div>
 
 </body>
 </html>
