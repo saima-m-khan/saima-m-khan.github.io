@@ -1,0 +1,132 @@
+/* Shared styles for every page — teal and powder blue */
+:root {
+  --teal-dark: #0b5c5c;
+  --teal: #138a8a;
+  --teal-light: #5fb3b3;
+  --powder: #b8dbe8;
+  --powder-light: #e8f3f8;
+  --text: #1f2d33;
+  --muted: #4d6670;
+  --card: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--powder-light);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+nav {
+  background-color: var(--teal-dark);
+  padding: 12px 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 4px solid var(--powder);
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px 0;
+}
+nav a:hover { color: var(--powder); }
+nav a.active { border-bottom: 2px solid var(--powder); }
+
+a { color: var(--teal); }
+
+/* Home page */
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 60px auto;
+  min-height: 70vh;
+  align-items: center;
+}
+.home-container .photo {
+  flex: 1 1 320px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.home-container .photo img {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 6px solid var(--powder);
+}
+.home-container .about {
+  flex: 1 1 380px;
+  padding: 30px 40px;
+}
+.about h1 { font-size: 2.5em; margin-bottom: 20px; color: var(--teal-dark); }
+.about p { margin-bottom: 15px; font-size: 1.1em; }
+
+a.link {
+  display: inline-block;
+  color: #fff;
+  background: var(--teal);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 6px 10px 0 0;
+}
+a.link:hover { background: var(--teal-dark); }
+
+/* Inner pages */
+.page {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+.page h1 {
+  font-size: 2.2em;
+  color: var(--teal-dark);
+  margin-bottom: 30px;
+}
+.page h2 {
+  font-size: 1.35em;
+  color: var(--teal-dark);
+  margin: 35px 0 15px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--powder);
+}
+.item {
+  background: var(--card);
+  border-left: 5px solid var(--teal-light);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+.item h3 { font-size: 1.05em; margin-bottom: 2px; }
+.item .meta { color: var(--muted); font-size: 0.92em; margin-bottom: 6px; }
+.item p { font-size: 0.97em; }
+.item a { font-weight: bold; }
+.item.highlight { border-left-color: var(--teal-dark); background: #f4fafc; }
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85em;
+  padding: 30px 16px;
+}
+
+/* Phones */
+@media (max-width: 700px) {
+  nav a { margin: 0 8px; }
+  .home-container { margin: 30px auto; }
+  .home-container .about { text-align: center; padding: 20px; }
+  .about h1 { font-size: 2em; }
+  .page h1 { font-size: 1.8em; }
+}
