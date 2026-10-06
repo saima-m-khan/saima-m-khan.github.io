@@ -5,12 +5,12 @@
 
 /* Colours: change these to restyle the whole site */
 :root {
-  --bg: #fafaf7;          /* page background (warm off-white) */
-  --tint: #eaf3f6;        /* powder blue, used for the highlighted award */
+  --bg: #f2f6f7;          /* page background (warm off-white) */
+  --tint: #e0edf1;        /* powder blue, used for the highlighted award */
   --ink: #1b2428;         /* main text */
   --ink-soft: #3f4b50;    /* secondary text */
   --ink-muted: #7d888c;   /* dates, labels, menu */
-  --rule: #e2e4e0;        /* thin grey dividing lines */
+  --rule: #d9e2e5;        /* thin grey dividing lines */
   --accent: #0f5f5f;      /* teal */
 
   --display: 'Cormorant Garamond', Georgia, serif;   /* big headings */
