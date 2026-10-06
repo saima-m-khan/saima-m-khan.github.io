@@ -2,109 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saima M. Khan</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
-    }
-    /* Navigation bar */
-    nav {
-      background-color: #004080;
-      padding: 10px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 1em;
-    }
-    nav a:hover { text-decoration: underline; }
-    /* Flex container for homepage */
-    .home-container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1000px;
-      margin: 80px auto;
-      min-height: 70vh;
-    }
-    /* Left: Photo */
-    .home-container .photo {
-      flex: 1 1 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-    .home-container .photo img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    /* Right: About */
-    .home-container .about {
-      flex: 1 1 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 40px;
-      text-align: left;
-    }
-    .about h1 { font-size: 2.5em; margin-bottom: 20px; }
-    .about p { margin-bottom: 15px; font-size: 1.1em; }
-    a.link {
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 15px;
-    }
-    a.link:hover { text-decoration: underline; }
-    /* Responsive for smaller screens */
-    @media (max-width: 300px) {
-      .home-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      .home-container .about {
-        text-align: center;
-        padding: 20px;
-      }
-      .home-container .photo img {
-        width: 300px;
-        height: 300px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Navigation bar -->
 <nav>
+  <a href="index.html" class="active">Home</a>
   <a href="research.html">Research</a>
   <a href="teaching.html">Teaching</a>
-  <a href="creative.html">Others</a>
+  <a href="awards.html">Awards &amp; Conferences</a>
 </nav>
-<!-- Home section -->
+
 <div class="home-container">
-  <!-- Left: Photo -->
   <div class="photo">
     <img src="profile.jpg?v=2" alt="Saima M. Khan">
   </div>
-  <!-- Right: About -->
   <div class="about">
     <h1>Saima M. Khan</h1>
-    <p>I'm a PhD candidate in Economics.</p>
+    <p>I'm a PhD candidate in Economics at the Tasmanian School of Business and Economics, University of Tasmania.</p>
     <p>My research interests include applied, labour, and behavioural economics. Outside of academia, you'll usually find me reading, making art, or perfecting my next cup of tea.</p>
     <div>
-      <a class="link" href="/SaimaMKhan_CV.pdf" target="_blank">Link to CV</a>
+      <a class="link" href="SaimaMKhan_CV.pdf" target="_blank">CV</a>
       <a class="link" href="mailto:saima.khan@utas.edu.au">Email</a>
       <a class="link" href="https://www.linkedin.com/in/saima-khan-565bb0185/" target="_blank">LinkedIn</a>
     </div>
